@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+  padding: 0px 20px;
+  background-color: bisque;
+}
+
+header {
+  position: sticky;
+  height: 60px;
+  background-color: aqua;
+  top: 10px;
+}
+
+header img {
+  position: absolute;
+  left: 3%;
+}
+
+header ul {
+  position: absolute;
+  left: 30%;
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+}
+
+header form {
+  position: absolute;
+  left: 70%;
+}
+
+.topSection {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/sites/2/2022/05/Book.jpg);
+  /* color: white; */
+  text-align: center;
+  background-position: center;
+  padding: 10px;
+}
+
+footer {
+  background-color: aqua;
+  height: 40px;
+  align-content: center;
+}
+
+#showBooks {
+  border-collapse: collapse;
+}
+
+#showBooks th,
+#showBooks td {
+  padding: 5px;
+}
+
+.up {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  /* text-align: center; */
+}
+
+.up a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.up a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#addBook input {
+  margin: 5px;
+}

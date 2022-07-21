@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>MyBooks</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/000/585/923/original/book-reading-logo-and-symbols-template-icons-vector.jpg"
+        height="50px"
+        width="50px"
+      />
+      <ul>
+        <table>
+          <td>
+            <li><a href="#">Home</a></li>
+          </td>
+          <td>
+            <li><a href="#">Store</a></li>
+          </td>
+        </table>
+      </ul>
+      <form id="search">
+        <input type="search" placeholder="Write Here..." />
+        <input type="button" value="Search" class="button" />
+      </form>
+    </header>
+    <main>
+      <div class="topSection">
+        <h2>MyBooks Website</h2>
+        <p>
+          Welcome to Our Website <br />
+          where you find the <span> best book </span>you can read
+        </p>
+      </div>
+      <ol>
+        <h4>Top Books :</h4>
+        <li>Hamlet by William Shakespeare</li>
+        <li>War and Peace by Leo Tolstoy</li>
+        <li>The Odyssey by Homer</li>
+      </ol>
+
+      <div>
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/81pl6ZLEFtL.jpg"
+          height="200px"
+          width="200px"
+        />
+        <img
+          src="https://d3i5mgdwi2ze58.cloudfront.net/hwi2qqngyicqz7s7ps4x4k1ei14k"
+          height="200px"
+          width="200px"
+        />
+        <img
+          src="https://d3i5mgdwi2ze58.cloudfront.net/jyx2n4emuiwjjfu682ylkh10xyoj"
+          id="test"
+          height="200px"
+          width="200px"
+        />
+      </div>
+
+      <form id="addBook">
+        <fieldset>
+          <legend>Add A Book :</legend>
+          <label for="name">Name Book : </label>
+          <input type="text" id="name" required />
+          <br />
+          <label for="author">Author Name : </label>
+          <input type="text" id="author" required />
+          <br />
+          <label for="price">Price Of Book : </label>
+          <input type="number" id="price" required />
+          <br />
+          <label for="date">Date of Publish : </label>
+          <input type="date" id="date" required />
+          <br />
+          <label>Available on Store : </label>
+          <input type="radio" name="av" id="yes" checked />
+          <label for="yes">Yes</label>
+          <input type="radio" name="av" id="no" />
+          <label for="no">No</label>
+          <br />
+          <label>Type Of Book : </label>
+          <select name="typebook">
+            <option id="novel">Novel</option>
+            <option id="literature">Literature</option>
+            <option id="fantasy">Fantasy</option>
+          </select>
+          <br />
+          <input type="submit" />
+          <input type="reset" />
+        </fieldset>
+      </form>
+
+      <table border="1px" id="showBooks">
+        <caption>
+          <h2>Featured Books</h2>
+        </caption>
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Author Name</th>
+            <th>Price</th>
+            <th>Date of Publish</th>
+            <th>Available</th>
+            <th>Type of Book</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>In Search of Lost Time</td>
+            <td>Marcel Proust</td>
+            <td>200</td>
+            <td>20-05-2018</td>
+            <td>Yes</td>
+            <td>Novel</td>
+          </tr>
+          <tr>
+            <td>Ulysses</td>
+            <td>James Joyce</td>
+            <td>200</td>
+            <td>20-05-2018</td>
+            <td>Yes</td>
+            <td>Novel</td>
+          </tr>
+          <tr>
+            <td>Don Quixote</td>
+            <td>Miguel de Cervantes</td>
+            <td>200</td>
+            <td>20-05-2018</td>
+            <td>Yes</td>
+            <td>Novel</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="up">
+        <a href="#">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>copyright &copy; 2022 Orange Academy</p>
+    </footer>
+  </body>
+</html>
